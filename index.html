@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+		
+	body{
+		background-image: url("fondo_web.png");
+		background-color: antiquewhite;
+		background-repeat: repeat-y;
+		background-position: center top;
+	}
+	
+	h1, h3{text-align: center;}
+	
+	p{text-align: center;}
+	
+	div {
+		background-color: lavender;
+		width: 80%;
+		border: 16px solid turquoise;
+		border-radius: 8px;
+		padding: 32px;
+		margin: 0 auto;
+		font-size: large;
+		box-shadow: 8px 8px;
+	}
+	
+	div div{background-color: azure;}
+	
+	#b1{
+		background-color: pink;
+		width: 200px;
+		height: 200px;
+		border: 2px solid black;
+		padding: 0px;
+		margin: 0px auto;
+		box-shadow: 8px 8px;
+	}
+
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	td, th {
+		border: 1px solid #ddd;
+		padding: 8px;
+	}
+	
+	tr{background-color: white;}
+
+	tr:nth-child(even){background-color: #f2f2f2;}
+
+	tr:hover {background-color: #ddd;}
+
+	th {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		text-align: left;
+		background-color: turquoise;
+	}
+	
+	.indice{
+		text-decoration: none;
+		display: inline-block;
+		margin: 0 auto;
+		position: relative;
+	}
+	#indice{text-align: center;}
+	</style>
+	<script>
+	var i=0;
+	function cambio() {
+		if(i==0){
+			i=1
+			document.getElementById("b1").style.background = "cyan";
+		} else {
+			i=0
+			document.getElementById("b1").style.background = "pink";
+		}
+		
+	}
+	</script>
+	</head>
+	
+	<body>
+		<h1>Actividad 2. Diseño de una Webquest</h1>
+
+		<div id="indice">
+			<a class="indice" href="#introduccion">Introducción</a> | 
+			<a class="indice" href="#tarea">Tarea</a> | 
+			<a class="indice" href="#proceso">Proceso</a> | 
+			<a class="indice" href="#resultado">Resultado</a> | 
+			<a class="indice" href="#recursos">Recursos</a> | 
+			<a class="indice" href="#evaluacion">Evaluación</a> | 
+			<a class="indice" href="#conclusion">Conclusión</a>
+		</div>
+
+		<h3 id="introduccion">INTRODUCCIÓN</h3>
+		<div>
+			En esta WebQuest utilizarás los lenguajes HTML, CSS y JavaScript para crear una página web con un elemento interactivo.
+		</div>
+		<br>
+
+		<h3 id="tarea">TAREA</h3>
+		<div>
+			La tarea consiste en crear una página web que muestre un cuadrado que cambia de color al pulsar un botón. Para completar la tarea debes acceder a los recursos aportados. La finalidad de la tarea es que veas cómo interactúan los tres lenguajes para conformar una página web.
+		</div>
+		<br>
+
+		<h3 id="proceso">PROCESO</h3>
+		<div>
+			El proceso para completar la tarea es la siguiente:
+			<ul>
+				<li>Crear un elemento en HTML.</li>
+				<li>Dar aspecto a dicho elemento en CSS.</li>
+				<li>Crear un evento con JavaScript.</li>
+				<li>Codificar el cambio que produce el evento en JavaScript.</li>
+			</ul>
+		</div>
+		<br>
+		
+		<h3 id="resultado">RESULTADO</h3>
+		<div>
+			<p>Haz click en el recuadro para cambiarlo de color.</p>
+			<div id="b1" onclick="cambio()"></div>
+		</div>
+		<br>
+
+		<h3 id="recursos">RECURSOS</h3>
+		<div>
+			<p>HTML:</p>
+			<div>
+				En el siguiente enlace encontrarás un tutorial, con códigos de ejemplo, sobre los elementos div en HTML.
+				<a href="https://www.w3schools.com/html/html_div.asp">https://www.w3schools.com/html/html_div.asp</a>
+			</div>
+
+			<p>CSS:</p>
+			<div>
+				Enlace a un tutorial que indica cómo integrar CSS en una web.
+				<a href="https://www.w3schools.com/css/css_howto.asp">https://www.w3schools.com/css/css_howto.asp</a>
+			</div>
+			<div>
+				Enlace a un tutorial, con códigos de ejemplo, sobre el uso de colores en CSS.
+				<a href="https://www.w3schools.com/css/css_colors.asp">https://www.w3schools.com/css/css_colors.asp</a>
+			</div>
+
+			<p>Adobe Color:</p>
+			<div>
+				Enlace a una web que puedes usar para generar una paleta de colores.
+				<a href="https://color.adobe.com/es/create/color-wheel">https://color.adobe.com/es/create/color-wheel</a>
+			</div>
+
+			<p>JavaScript:</p>
+			<div>
+				Enlace a un tutorial que indica cómo introducir JavaScript en una web.
+				<a href="https://www.w3schools.com/js/js_whereto.asp">https://www.w3schools.com/js/js_whereto.asp</a>
+			</div>
+			<div>
+				Enlace a un tutorial sobre el uso de eventos en JavaScript.
+				<a href="https://www.w3schools.com/js/js_events.asp">https://www.w3schools.com/js/js_events.asp</a>
+			</div>
+			<div>
+				Enlace a códigos de ejemplo de eventos en JavaScript.
+				<a href="https://www.w3schools.com/js/js_htmldom_events.asp">https://www.w3schools.com/js/js_htmldom_events.asp</a>
+			</div>
+
+		</div>
+		<br>
+
+		<h3 id="evaluacion">EVALUACIÓN</h3>
+		<div>
+			<table>
+				<tr>
+					<th>Criterio</th>
+					<th>Suficiente</th>
+					<th>Sobresaliente</th>
+				</tr>
+				<tr>
+					<td>Elementos HTML</td>
+					<td>Hay 1 elemento HTML.</td>
+					<td>Hay 2 o más elementos HTML.</td>
+				</tr>
+				<tr>
+					<td>Estilos CSS</td>
+					<td>Hay 1 elemento con estilo visible.</td>
+					<td>Hay 2 o más elementos con alguna modificación de estilo visible.</td>
+				</tr>
+				<tr>
+					<td>Eventos JavaScript</td>
+					<td>Hay 1 interacción con un elemento.</td>
+					<td>Hay 2 o más interacciones con los elementos.</td>
+				</tr>
+			</table>
+		</div>
+		<br>
+		
+		<h3 id="conclusion">CONCLUSIÓN</h3>
+		<div>
+			Ahora sabes hacer elementos interactivos para una página web y estás un paso más cerca de convertirte en un verdadero desarrollador web. Todo gracias a que el ejercicio te ha hecho llevar a la práctica conceptos sencillos de web, sobre la marcha.
+		</div>
+		<br>
+		
+	</body>
+	
+</html>
